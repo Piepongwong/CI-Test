@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+ssh root@82.196.13.37 \
+cd /home/CI-Test \
+git pull origin master \
+npm install \
+mocha \
+node app.js
