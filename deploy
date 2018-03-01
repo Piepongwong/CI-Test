@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-ssh root@82.196.13.37 \
-cd /home/CI-Test \
-git pull origin master \
-npm install \
-mocha \
-node app.js
+ssh root@82.196.13.37 <<'ENDSSH' 
+cd /home/CI-Test && git pull origin master && npm install && mocha test/test && pm2 restart app.js
+ENDSSH
