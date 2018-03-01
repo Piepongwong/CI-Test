@@ -5,7 +5,7 @@ app.set("PORT", 3000)
 
 app.get("/", (req, res) => {
 
-	console.log("Reached")
+	console.log("Reacheddd")
 	res.status(200).send("HI, I'm working. And I am a change! ANothesfsdfsr!asdfasf")
 
 })
